@@ -5,12 +5,12 @@ const refs = {
 refs.input.addEventListener('blur', onBlurChange)
 
 function onBlurChange() {
-    if (this.value.length === Number(refs.input.dataset.length)) {
-       this.classList.add("valid");
-       this.classList.remove("invalid");
+    if (refs.input.value.length === Number(refs.input.dataset.length)) {
+       refs.input.classList.add("valid");
+       refs.input.classList.remove("invalid");
     } else { 
-       this.classList.add("invalid")
-       this.classList.remove("valid");
+       refs.input.classList.add("invalid")
+       refs.input.classList.remove("valid");
     }
 
 }
