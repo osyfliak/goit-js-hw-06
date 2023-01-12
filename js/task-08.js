@@ -17,11 +17,11 @@ function onFormSubmit(event) {
         alert('Будь ласка, заповніть всі поля');
 
     } else {
-       const formData = {
+        const formData = {
             mail,
             password,
-        }; 
+        };
         console.log(formData);
-    }   
-      refs.form.reset();
+        refs.form.reset();
+    }
 }
